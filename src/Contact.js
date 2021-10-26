@@ -1,18 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Toolbar from "@mui/material/Toolbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Contact
-        </p>
-
-      </header>
-    </div>
-  );
+export default function SimpleContainer() {
+    return (
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+            <Toolbar />
+            Contact
+        </Box>
+    );
 }
-
-export default App;
