@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Contact from "./Contact";
-import NavBar from './NavBar';
+import App from './pages/App';
+import Contact from "./pages/Contact";
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from "@mui/material/Toolbar";
@@ -12,7 +11,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Navigation from "./Navigation";
+import Navigation from "./components/Navigation";
 
 
 ReactDOM.render(

@@ -8,8 +8,8 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {Link as RouterLink} from 'react-router-dom';
 
-import { menu } from "./menu";
-import { hasChildren } from "./utils";
+import { menu } from "../menu";
+import { hasChildren } from "../utils";
 
 export default function SideMenu() {
     return menu.map((item, key) => <MenuItem key={key} item={item} />);
