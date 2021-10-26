@@ -8,9 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Link as RouterLink} from 'react-router-dom';
 
-export default function ButtonAppBar() {
+export default function NavBar(props) {
+    const { handleDrawerToggle } = props;
     return (
-        <Box sx={{ flexGrow: 1 }}>
             <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
                 <Toolbar>
                     <IconButton
@@ -18,7 +18,8 @@ export default function ButtonAppBar() {
                         edge="start"
                         color="inherit"
                         aria-label="menu"
-                        sx={{ mr: 2 }}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        onClick={handleDrawerToggle}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -29,6 +30,5 @@ export default function ButtonAppBar() {
                     <Button component={RouterLink} to="/contact" color="inherit">Contact</Button>
                 </Toolbar>
             </AppBar>
-        </Box>
     );
 }

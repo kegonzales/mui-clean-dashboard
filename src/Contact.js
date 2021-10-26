@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Toolbar from "@mui/material/Toolbar";
+import Container from "@mui/material/Container";
 
 export default function SimpleContainer() {
     return (
-        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-            <Toolbar />
+        <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             Contact
-        </Box>
+        </Container>
     );
 }

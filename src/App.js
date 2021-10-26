@@ -1,13 +1,11 @@
-import Toolbar from "@mui/material/Toolbar";
-import Box from "@mui/material/Box";
 import React from "react";
+import Container from '@mui/material/Container';
 
 function App() {
   return (
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <Toolbar />
+      <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
         Home
-      </Box>
+      </Container>
   );
 }
 
